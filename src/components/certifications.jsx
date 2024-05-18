@@ -1,6 +1,5 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import "../Styles/Certifications.css";
 import c from "../images/c_lang.jpg";
 import java from "../images/java.png";
