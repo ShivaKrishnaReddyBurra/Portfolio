@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poetsen One', sans-serif;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding:0 2rem;
+    background-color: #ca4747;
+    color: white;
+}
+header div{
+    display: flex;
+    align-items: center;
+    gap: 1rem; 
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    clip-path: circle(50%);
+    background-size: cover;
+    cursor: pointer;
+}
+
+nav .a{
+    color: white;
+    text-decoration: none;
+    margin: 0 2rem;
+}
+nav .a:hover{
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: .8s;
+}
+.nav-btn{
+    background:transparent;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    visibility: hidden;
+    opacity: 0;
+}
+.nav-btn:hover{
+    background-color: black;
+    transition: .8s;
+}
+@media (max-width:1170px) {
+    header{
+        padding: 0 1rem;
+    }
+    nav .a{
+        margin: 0 1rem;
+    }
+    
+}
+@media (max-width:960px)
+{
+    header{
+        font-size: 13px;
+        padding: 0 0.5rem;
+    }
+    nav .a{
+        margin: 0 0.5rem;
+    }
+}
+
+@media(max-width: 768px){
+    header{
+        font-size: 20px;
+    }
+   header .nav-btn{
+       visibility: visible;
+       opacity: 1;
+       font-size: 1.5rem;
+   }
+   header nav{
+         position: fixed;
+         top: 0;
+         left: 0;
+         height: 100%;
+         width: 100%;
+         display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #ca4747;
+        transform: translateX(-100%);
+        transition: .5s;
+        z-index: 1;
+    }
+    .m{
+        z-index: 0;
+    }
+    .n{
+        z-index: 1;
+    }
+    header .nav-active{
+        transform:none;
+    }
+    .nav-close-btn{
+        position:absolute;
+        top: 1rem;
+        right: 1rem;
+        
+    }
+}
+
+@media (max-width:330px)
+{
+    header{
+        font-size: 15px;
+    }
+    nav .a{
+        margin: 0 0.5rem;
+    }
+}

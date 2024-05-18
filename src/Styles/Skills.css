@@ -1,0 +1,60 @@
+.sec-4{
+    margin-top: 55px;
+    padding: 30px;
+    user-select: none;
+    animation: animate 20s ease;
+}
+@keyframes animate{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.sec-4 h1{
+    font-size: 55px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: #4b45c9 0px 0px 20px;
+    animation: new 20s ease;
+}
+@keyframes new{
+    0%{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.sec-4 .S{
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.sec-4 .S h2{
+    text-align: center;
+    padding: 5px;
+
+}
+
+.sec-4 .S img{
+    width: 100px;
+    height: 100px;
+    box-shadow: #33cf45 0px 0px 20px;
+}
+.con{
+    height: 150px;
+    width: 150px;
+    padding: 5px;
+    margin: 2px;
+    text-align: center;
+}
+

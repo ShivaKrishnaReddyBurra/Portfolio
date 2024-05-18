@@ -1,0 +1,61 @@
+.sec-5{
+    margin-top: 55px;
+    padding: 30px;
+    user-select: none;
+}
+.sec-5 h1{
+    font-size: 55px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: #33cf45 0px 0px 20px;
+}
+.sec-5 h2{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
+    color: #4b45c9;
+}
+.sec-5 p{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    padding: 20px;
+}
+.sec-5 .P1{
+    box-shadow: #ca4747 0px 0px 20px;
+    padding: 20px;
+    margin: 20px auto;
+}
+.sec-5 .P2{
+    box-shadow: #4b45c9 0px 0px 20px;
+    padding: 20px;
+    margin: 20px auto;
+}
+.sec-5 .P3{
+    box-shadow: #33cf45 0px 0px 20px;
+    padding: 20px;
+    margin: 20px auto;
+}
+.P1{
+   
+    animation: one 5s ;
+}
+.P2{
+    animation: one 5s ;
+    animation-delay: .5s;
+}
+.P3{
+    animation: one 5s ;
+    animation-delay: 1s;
+}
+@keyframes one{
+    0%{
+        visibility: hidden;
+        transform: translateX(-100%);
+    }
+    100%{
+        visibility: visible;    
+        transform: translateX(0%);
+    }
+}
